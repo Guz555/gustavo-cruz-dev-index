@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/logo2.png">
+    <title>Gustavo Cruz Dev</title>
+</head>
+
+<body>
+    <header>
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Fechar menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+        <nav class="menu">
+
+            <ul onclick="getElementById('close-menu').checked = false;" class="menu-content">
+                <li><a href="#home"><img src="imgs/logo2.png" alt="Logo do site, com as inicias G C"></a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#exp">experiência</a></li>
+                <li><a href="#contato">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="intro-bg">
+        <div class="center">
+            <h1>Gustavo Cruz Dev</h1>
+            <div class="typewriter">
+                <h3>Desenvolvedor Back-End</h3>
+            </div>
+        </div>
+
+    </section>
+    <section id="sobre" class="black-bg sobre">
+        <h2>Sobre mim</h2>
+        <div class="sobre-content">
+            <img src="imgs/Gustavo-Cruz.jpg"
+                alt="Foto de Gustavo Cruz, andando de bicicleta na marginal Pinheiros, São Paulo-Sp">
+            <p>Olá e bem-vindo ao meu site!
+                Me chamo Gustavo Cruz, tenho 23 anos. Sou brasileiro natural de São Paulo - SP mas moro no
+                litoral sul
+                paulista. Também sou estudante de Analise e desenvolvimento de sistemas, e estudo por conta própria
+                atualmente.
+            </p>
+        </div>
+    </section>
+    <section id="exp" class="white-bg">
+        <h2>experiência</h2>
+        <div class="exp">
+            <div class="exp-grid">
+                <p>Até o momento apenas trabalhei como estagiário em suporte ao usuario e em manutenção de computadores.
+                    Agora,
+                    estou em busca de uma oportunidade na área de desenvolvimento de software para aprimorar minhas
+                    experiências profissionais.</p>
+                <p>Para saber mais sobre mim, baixe meu curriculo clicando abaixo:</p>
+                <form method="get" target="_blank" action="pdf/Curriculo.pdf">
+                    <button type="submit">Baixar
+                        Curriculo</button>
+                </form>
+            </div>
+            <h3>HABILIDADES:</h3>
+            <div class="exp-flex container">
+                <ul>
+                    <li class="item"><img src="imgs/tech-logos/python.png" alt="Python Logo"></li>
+                    <li class="item"><img src="imgs/tech-logos/html.png" alt="HTML5 logo"></li>
+                    <li class="item"><img src="imgs/tech-logos/css.png" alt="CSS3 logo"></li>
+                    <li class="item"><img src="imgs/tech-logos/mysql.png" alt="My Sql logo"></li>
+                    <li class="item"><img src="imgs/tech-logos/csharp.png" alt="C sharp logo"></li>
+                    <li class="item"><img src="imgs/tech-logos/manutencao.png" alt="manutenção de computadores logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="white-bg contato">
+        <h2>Contato:</h2>
+        <div class="contato-info">
+            <div class="contato-rede">
+                <a href="https://www.instagram.com/guzz.exe/" target="_blank"><img src="imgs/tech-logos/instagram.png"
+                        alt="Logo do instagram"></a>
+                <p>Instagram</p>
+            </div>
+            <div class="contato-rede">
+                <a href="https://www.linkedin.com/in/gustavo-cruz-19a2141b2/" target="_blank"><img
+                        src="imgs/tech-logos/linkedin.png" alt="Logo do LinkedIn"></a>
+                <p>LinkedIn</p>
+            </div>
+            <div class="contato-rede">
+                <a href="https://wa.me/5515991088894" target="_blank"><img src="imgs/tech-logos/whatsapp.png"
+                        alt="Logo do Whatsapp"></a>
+                <p>Whatsapp</p>
+            </div>
+            <div class="contato-rede">
+                <a href="#"><img src="imgs/tech-logos/email.png" alt="Logo de e-mail"></a>
+                <p>E-mail</p>
+            </div>
+        </div>
+    </section>
+    <section class="black-bg rodape">
+        <img src="imgs/logo2.png" alt="">
+    </section>
+
+</body>
+
+</html>

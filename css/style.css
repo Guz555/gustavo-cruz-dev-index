@@ -1,0 +1,409 @@
+:root {
+    --black: #000000;
+    --lime: #00FA00;
+    --green-yellow: #8BFF1A;
+    --dark-gray: #121212;
+    --white: #FFFFFF;
+
+}
+
+@font-face {
+    font-family: Azonix-1VB0;
+    src: url(../fonts/Azonix-1VB0.otf);
+}
+
+@font-face {
+    font-family: CODE;
+    src: url(../fonts/CODE\ Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: var(--black);
+    color: var(--dark-gray);
+}
+
+section {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Azonix-1VB0', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: inherit;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+footer {
+    min-width: 80vh;
+}
+
+
+/* Classes */
+
+.menu {
+    background-color: var(--dark-gray);
+    font-family: 'Azonix-1VB0', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid var(--green-yellow);
+}
+
+
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu li {
+    display: inline;
+    max-width: 1000px;
+}
+
+.menu li a:hover {
+    color: var(--green-yellow);
+}
+
+.intro-bg {
+    background-color: var(--black);
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+    background-image: url(../imgs/gif3.gif);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    border-bottom: 5px solid var(--green-yellow);
+}
+
+.intro-bg h1 {
+    padding-top: 25rem;
+    text-shadow:
+        -1px -1px 0px rgb(0, 255, 0),
+        -1px 1px 0px rgb(0, 255, 0),
+        1px -1px 0px rgb(0, 255, 0),
+        1px 0px 0px rgb(0, 255, 0);
+    ;
+}
+
+/* Animação */
+
+.typewriter h3 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--lime);
+    /* The typwriter cursor */
+    white-space: unset;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1rem;
+    /* Adjust as needed */
+    animation:
+        typing 2.5s steps(40, end),
+        blink-caret .75s step-start infinite;
+    font-family: CODE;
+    color: var(--lime);
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--lime);
+    }
+}
+
+.white-bg {
+    background-color: var(--white);
+    padding: 40px;
+
+}
+
+.sobre h2 {
+    display: inline;
+}
+
+.sobre {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.sobre img {
+    max-width: 340px;
+    max-height: 340px;
+    border-radius: 50%;
+}
+
+.sobre img:hover {
+    border: 2.5px solid var(--green-yellow);
+}
+
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-justify: auto;
+    padding: 40px;
+}
+
+.black-bg {
+    background-image: url(../imgs/parabolic-pentagon.svg);
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    color: var(--white);
+}
+
+.white-bg {
+    border-bottom: 2px solid var(--dark-gray);
+}
+
+.white-bg>h2,
+h3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.exp-grid button {
+    width: 200px;
+    height: 100px;
+    font-size: 1.5rem;
+    font-family: 'Azonix-1VB0';
+    color: var(--black);
+    background-color: transparent;
+    border-radius: 2rem;
+}
+
+.exp-grid button:hover {
+    cursor: pointer;
+    background-color: var(--green-yellow);
+    border: none;
+}
+
+.exp-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp h3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.container {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    margin: 3rem;
+}
+
+.exp-flex img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.contato-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contato-info img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.contato {
+    min-height: 50vh;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--lime);
+    font-weight: bold;
+    padding: 0;
+}
+
+.rodape img {
+    width: 100px;
+
+}
+
+@media (max-width: 905px) {
+    .sobre-content {
+        display: inline;
+        text-align: center;
+    }
+
+    .sobre-content img {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 0%;
+        padding-bottom: 4.5rem;
+    }
+
+    .typewriter h3 {
+        font-size: 3rem;
+    }
+
+    .exp-flex img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contato-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+
+}
+
+.close-menu {
+    display: none;
+
+}
+
+
+@media (max-width: 500px) {
+    .menu {
+        bottom: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .menu-content {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+    }
+
+    .exp-grid {
+        display: block;
+        padding: 0.5rem, 2rem;
+    }
+
+    .exp-grid button {}
+
+    .contato-info img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 1rem;
+        background-color: var(--lime);
+        color: var(--dark-gray);
+        font-size: 4.5rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+
+
+
+    /* × */
+}
