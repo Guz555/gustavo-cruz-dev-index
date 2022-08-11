@@ -282,6 +282,7 @@ h3 {
 }
 
 .exp-flex img {
+
     max-width: 100px;
     max-height: 100px;
 }
@@ -312,10 +313,9 @@ h3 {
 
 .rodape img {
     width: 100px;
-
 }
 
-@media (max-width: 905px) {
+@media (max-width: 855px) {
     .sobre-content {
         display: inline;
         text-align: center;
@@ -333,14 +333,19 @@ h3 {
         font-size: 3rem;
     }
 
+    .exp-flex {
+        padding: 0;
+        justify-content: center;
+    }
+
     .exp-flex img {
         width: 80px;
         height: 80px;
     }
 
     .contato-info {
-        display: grid;
-        grid-template-columns: 1fr 1fr
+        flex-direction: row;
+        justify-items: center;
     }
 
 
@@ -368,6 +373,18 @@ h3 {
     .exp-grid {
         display: block;
         padding: 0.5rem, 2rem;
+    }
+
+    .exp-flex>.item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    .contato-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
     }
 
     .contato-info img {
