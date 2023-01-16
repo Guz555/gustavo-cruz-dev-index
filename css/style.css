@@ -128,6 +128,25 @@ footer {
     border-bottom: 5px solid var(--green-yellow);
 }
 
+.opt-lang {
+    background-color: var(--black);
+    color: white;
+    margin-top: 100px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+
+.opt-lang option {
+    background-color: black;
+    color: #00FA00;
+}
+
+.opt-lang:hover {
+    cursor: grab;
+}
+
 .intro-bg h1 {
     padding-top: 25rem;
     text-shadow:
@@ -152,7 +171,7 @@ footer {
     letter-spacing: 1rem;
     /* Adjust as needed */
     animation:
-        typing 2.5s steps(40, end),
+        typing 2.5s steps(55, end),
         blink-caret .75s step-start infinite;
     font-family: CODE;
     color: var(--lime);

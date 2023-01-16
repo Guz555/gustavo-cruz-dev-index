@@ -17,26 +17,34 @@
         <nav class="menu">
             <ul onclick="getElementById('close-menu').checked = false;" class="menu-content">
                 <li><a href="#home"><img src="imgs/logo2.png" alt="Logo do site, com as inicias G C"></a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#exp">experiência</a></li>
-                <li><a href="#contato">contato</a></li>
+                <li><a href="#sobre" id="menu-about">Sobre</a></li>
+                <li><a href="#exp" id="menu-exp">experiência</a></li>
+                <li><a href="#contato" id="menu-contact">contato</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="home" class="intro-bg">
+
+        <select class="opt-lang" id="opt-lang" name="languages">
+            <option class="pt-br" value="pt-br">Português 🇧🇷</option>
+            <option class="en" value="en">English 🇬🇧</option>
+            <option value="ru" value="ru">Русский 🇷🇺</option>
+        </select>
         <div class="center">
             <h1>Gustavo Cruz Dev</h1>
+
             <div class="typewriter">
-                <h3>Desenvolvedor Back-End</h3>
+                <h3 id="dbe">Desenvolvedor Back-End</h3>
             </div>
         </div>
 
     </section>
     <section id="sobre" class="black-bg sobre">
-        <h2>Sobre mim</h2>
+        <h2 id="about-me">Sobre mim</h2>
         <div class="sobre-content">
             <img src="imgs/Gustavo-Cruz.jpg" alt="Foto de perfil de Gustavo Cruz , Desenvolvedor Back-End">
-            <p>Olá e bem-vindo ao meu site!
+            <p id="sobre-content">Olá e bem-vindo ao meu site!
                 Me chamo Gustavo Cruz, tenho 23 anos. Sou brasileiro natural de São Paulo - SP mas moro no
                 litoral sul
                 paulista. Também sou estudante de Análise e Desenvolvimento de Sistemas, e estudo por conta própria
@@ -45,20 +53,21 @@
         </div>
     </section>
     <section id="exp" class="white-bg">
-        <h2>experiência</h2>
+        <h2 id="experience">experiência</h2>
         <div class="exp">
             <div class="exp-grid">
-                <p>Até o momento apenas trabalhei como estagiário em suporte ao usuário e em manutenção de computadores.
+                <p id="desc-experience">Até o momento apenas trabalhei como estagiário em suporte ao usuário e em
+                    manutenção de computadores.
                     Agora
                     estou em busca de uma oportunidade na área de desenvolvimento de software para aprimorar minhas
                     experiências profissionais.</p>
-                <p>Para saber mais sobre mim, baixe meu curriculo clicando abaixo:</p>
+                <p id="btn-bellow">Para saber mais sobre mim, baixe meu curriculo clicando abaixo:</p>
                 <form method="get" target="_blank" action="pdf/Curriculov2.pdf">
-                    <button type="submit">Baixar
+                    <button type="submit" id="download">Baixar
                         Currículo </button>
                 </form>
             </div>
-            <h3>HABILIDADES:</h3>
+            <h3 id="skills">HABILIDADES:</h3>
             <div class="exp-flex container">
                 <ul>
                     <li class="item"><img src="imgs/tech-logos/python.png" alt="Python Logo"></li>
@@ -73,7 +82,7 @@
         </div>
     </section>
     <section id="contato" class="white-bg contato">
-        <h2>Contato:</h2>
+        <h2 id="contact">Contato:</h2>
         <div class="contato-info">
             <div class="contato-rede">
                 <a href="https://www.instagram.com/guzz.exe/" target="_blank"><img src="imgs/tech-logos/instagram.png"
@@ -101,6 +110,7 @@
         <img src="imgs/logo2.png" alt="">
     </section>
 
+    <script src="js/langConfig.js"></script>
 </body>
 
 </html>
