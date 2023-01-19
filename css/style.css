@@ -201,6 +201,12 @@ footer {
     }
 }
 
+.gif-bg {
+    background-image: url("../imgs/code-coding.gif");
+    background-size: auto;
+
+}
+
 .white-bg {
     background-color: var(--white);
     padding: 40px;
