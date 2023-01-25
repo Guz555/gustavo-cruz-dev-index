@@ -235,6 +235,14 @@ footer {
     border: 2.5px solid var(--green-yellow);
 }
 
+.sobre-p {
+    background-color: #23f61c8f;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
 .sobre-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
