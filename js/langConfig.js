@@ -23,6 +23,10 @@ function changeLanguage() {
         document.getElementById("download").textContent = "Baixar Curriculo"
         document.getElementById("skills").textContent = "Habilidades"
         document.getElementById("contact").textContent = "Contato:"
+        document.getElementById("ytdownloader-desc").textContent = `Um simples baixador de videos do youtube, basta digitar a URL e selecionar a extenção
+        de arquivo desejada. Desenvolvido em Python com a biblioteca Pytube e PyQT5`
+        document.getElementById("seeOnGit").textContent = `Ver no Github`
+        document.getElementById("blog-desc-p").textContent = `Blog funcional sobre automoveis desenvolvido em Python com o framework Django. Essa é a segunda versão desse blog, a primeira versão estava quase pronta ja poderia ter feito o deploy porém perdi todos meus arquivos e códigos-fonte, mas não desanimei e estou refazendo do zero. Por enquanto você pode ver no reposotório do GitHub`
     }
     else if (selectedLanguage === "en") {
         document.getElementById("menu-about").textContent = "About"
@@ -37,7 +41,11 @@ function changeLanguage() {
         document.getElementById("download").textContent = "Download Resume"
         document.getElementById("skills").textContent = "Skills"
         document.getElementById("contact").textContent = "Contact:"
+        document.getElementById("ytdownloader-desc").textContent = `A simple YouTube video downloader, just enter the URL and select the desired file extension. Developed in Python with Pytube and PyQT5 library.`
+        document.getElementById("seeOnGit").textContent = `See on Github`
+        document.getElementById("blog-desc-p").textContent = `Functional blog about cars developed in Python with the Django framework. This is the second version of this blog, the first version was almost ready and could have been deployed, but I lost all my files and source code. However, I didn't give up and I'm starting over from scratch. For now, you can check it out on my GitHub repository.`
     }
+
     else if (selectedLanguage === "ru") {
         document.getElementById("menu-about").textContent = "Обо мне"
         document.getElementById("menu-exp").textContent = "Опыт"
@@ -59,6 +67,8 @@ function changeLanguage() {
         document.getElementById("download").textContent = "Скачать резюме"
         document.getElementById("skills").textContent = "Навыки"
         document.getElementById("contact").textContent = "Контакт:"
+        document.getElementById("ytdownloader-desc").textContent = `Простой загрузчик видео с YouTube, достаточно ввести URL и выбрать нужное расширение файла. Разработан на Python с использованием библиотек Pytube и PyQT5.`
+        document.getElementById("blog-desc-p").textContent = `Функциональный блог об автомобилях, разработанный на Python с использованием фреймворка Django. Это вторая версия блога, первая была практически готова к развертыванию, но я потерял все свои файлы и исходный код. Однако я не сдаюсь и пересоздаю все с нуля. Пока вы можете посмотреть на мой репозиторий GitHub.`
     }
 }
 

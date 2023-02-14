@@ -62,7 +62,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: gray;
+    color: white;
 }
 
 a:visited {
@@ -207,6 +207,7 @@ footer {
 
 }
 
+
 .white-bg {
     background-color: var(--white);
     padding: 40px;
@@ -235,21 +236,18 @@ footer {
     border: 2.5px solid var(--green-yellow);
 }
 
-.sobre-p {
-    background-color: #23f61c8f;
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 2px 2px 2px 2px black;
-
-}
-
-
 .sobre-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-justify: auto;
     padding: 40px;
+}
+
+.sobre-p {
+    background-color: #23f61c8f;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .black-bg {
@@ -316,6 +314,76 @@ h3 {
     margin: 3rem;
 }
 
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.slide-content img {
+    margin: 20px;
+}
+
+.slide-content {
+    text-align: center;
+    max-width: 500px;
+}
+
+.slide-content a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.slide-content a:hover {
+    color: var(--green-yellow);
+}
+
+.slide-content img {
+    max-width: 250px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 3px 0px 0px 3px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: var(--lime);
+    color: var(--white);
+}
+
+
 .exp-flex img {
 
     max-width: 100px;
@@ -339,16 +407,11 @@ h3 {
 .rodape {
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
     min-height: 10vh;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--lime);
     font-weight: bold;
     padding: 0;
-}
-
-.rodape-p {
-    font-size: 10px;
 }
 
 .rodape img {
@@ -395,6 +458,14 @@ h3 {
     display: none;
 }
 
+
+@media (max-width: 735px) {
+
+    .next,
+    .prev {
+        top: 10%;
+    }
+}
 
 @media (max-width: 500px) {
     .menu {
