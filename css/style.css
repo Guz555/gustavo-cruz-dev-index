@@ -383,6 +383,10 @@ h3 {
     color: var(--white);
 }
 
+.seeOnGit {
+    color: var(--lime);
+}
+
 
 .exp-flex img {
 
