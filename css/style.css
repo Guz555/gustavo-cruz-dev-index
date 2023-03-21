@@ -277,6 +277,8 @@ h3 {
 }
 
 .btn-download button {
+    display: block;
+    margin: auto;
     width: 200px;
     height: 100px;
     font-size: 1.5rem;
@@ -284,6 +286,7 @@ h3 {
     color: var(--black);
     background-color: transparent;
     border-radius: 2rem;
+
 }
 
 .btn-download button:hover {
@@ -487,11 +490,6 @@ h3 {
     .exp-grid {
         display: block;
         padding: 0.5rem, 2rem;
-    }
-
-    .btn-download button {
-        display: block;
-        margin: auto;
     }
 
     .exp-flex>.item {
